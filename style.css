@@ -80,6 +80,11 @@ body{
     border-radius:16px;
     border:none;
     cursor:pointer;
+    
+}
+.btn:hover{
+    background-image: linear-gradient(hsl(4, 100%, 67%),rgb(228, 59, 47));
+    
 }
 .bottom-side{
     object-fit: cover;
@@ -118,6 +123,9 @@ body{
     font-weight: 700;
     font-family: "Roboto";
     font-size: 1.1rem;
+}
+.thank-you-card button:hover{
+    background-image: linear-gradient(hsl(4, 100%, 67%),rgb(228, 59, 47));
 }
 @media (max-width:768px){
     .container{
