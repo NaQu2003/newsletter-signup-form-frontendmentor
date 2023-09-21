@@ -1,0 +1,156 @@
+@font-face{
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url('assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+    url('assets/fonts/roboto-bold-webfont.woff') format('woff')
+}
+@font-face{
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url('assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+    url('assets/fonts/roboto-bold-webfont.woff') format('woff')
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(234, 29%, 20%);
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    display:flex;
+    align-items: center;
+    column-gap:40px;
+    background-color:white;
+    padding:20px 20px 20px 60px;
+    border-radius: 30px;
+    
+}
+.container .top-side h1{
+    font-family: Roboto;
+    font-size: 3rem;
+}
+.join-p{
+    max-width:360px;
+}
+.sucess-p{
+    display:flex;
+    column-gap:10px;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+.form label{
+    margin-bottom:6px;
+}
+.labels{
+    display:flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size:0.85rem;
+    margin-top:40px;
+}
+
+.error{
+    color:hsl(4, 100%, 67%);
+    display:none;
+}
+.email-input{
+    padding:15px;
+    border:1px solid hsl(231, 7%, 60%);
+    border-radius:6px;
+    outline:none;
+}
+.btn{
+    background-color:hsl(234, 29%, 20%);
+    color:white;
+    padding:15px;
+    font-family: Roboto;
+    font-weight: 700;
+    margin-top:15px;
+    border-radius:16px;
+    border:none;
+    cursor:pointer;
+}
+.bottom-side{
+    object-fit: cover;
+}
+
+
+.illustration{
+    width:100%;
+    max-width: 768;
+}
+.thank-you-card{
+    display:block;
+    background-color:white;
+    padding:20px 20px 20px 20px;
+    border-radius:8px;
+    display:none;
+    
+}
+.thank-you-card h3{
+    font-size: 2.5rem;
+}
+.thank-you-card p{
+    max-width: 400px;
+}
+.thank-you-card p span{
+    font-weight: 700;
+}
+.thank-you-card button{
+    background-color:hsl(234, 29%, 20%);
+    color:white;
+    padding:20px;
+    border:none;
+    border-radius:8px;
+    width:100%;
+    cursor:pointer;
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 1.1rem;
+}
+@media (max-width:768px){
+    .container{
+        flex-direction: column-reverse;
+        padding:0px 0px 20px 0px;
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    .container .top-side h1{
+        font-size:2.5rem;
+        padding-left:20px;
+       
+    }
+   
+    .sucess-p{
+        max-width: 300px;
+        padding-left:20px;
+        
+    }
+    .join-p{
+        padding-left:20px;
+    }
+    .form{
+        padding-left:20px;
+        padding-right:20px;
+    }
+   .thank-you-card{
+       padding-top:100px;
+       width: 100%;
+       min-height: 100vh;
+   }
+   .thank-you-card p {
+       margin-bottom:150px;
+   }
+    
+}
